@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar álbum</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.jpg">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Great+Vibes&family=Lobster&displayswap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+    <div class= "flex items-center justify-center">
+        <div class="mt-20 bg-black bg-opacity-90 p-8 rounded-lg shadow-lg w-3/5 md:w-2/5">
+          <h1 id="tg" class="text-3xl text-center mb-4">Nuevo Álbum</h1>
+            <div id="tf">
+          <form method="POST" action="AgregarAlbum"></form>
+            <label> Título: <input type="text" name="album" placeholder="Álbum" required>
+                <br>
+                <label> Año de Lanzamiento: 
+                <input type="number" name="Año" placeholder="Año" required>
+                <br>
+                <label for= "Descripción">Descripción</label>
+                <br>
+                <textarea id="Descripción" rows="10" cols="40" placeholder="Añade una descripción" required></textarea>
+                <br>
+                <label for="imagen">Imagen (URL):</label>
+                <input type="url" id="imagen" name="imagen" placeholder="Ingrese la URL de la imagen" required>
+                    <label> <input type="submit">
+                 </form>
+            </div>
+        </div>
+      </div>
+ 
+</body>
+</html>

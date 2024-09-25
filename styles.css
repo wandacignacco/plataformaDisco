@@ -1,0 +1,89 @@
+/* fuente */
+
+/* Sidebar */
+
+
+
+.home{
+    background-image: url(fondo1.jpg);
+    margin: 0; /* Elimina el margen predeterminado del body */
+    padding: 0; /* Elimina el padding predeterminado del body */
+    height: 100vh; /* Opción para ocupar toda la altura de la ventana */
+  
+
+}
+
+body{
+    background-image: url(fondo\ 2.png);
+    background-size: cover;
+ 
+}
+
+.títulos{
+    background-color:black;
+    color: white;
+    font-family:"Bebas Neue", sans-seri;
+    font-size: 500%;
+    margin-top: 3%;
+    text-align: center;
+    text-transform: uppercase;
+   
+}
+
+
+.párrafo{
+    font-family:Arial, Helvetica, sans-serif;
+    width: 96%;
+    color: black;
+    text-align: justify;
+    margin-left: 6px;
+}
+
+#nav{
+    background-color: gainsboro;
+}
+
+#sidebar{
+font-family: "Bebas Neue", sans-serif;
+font-size: 200%;
+
+}
+
+
+#lana{
+    font-size: 200%;
+    font-family: "Great Vibes", cursive;
+    color:black;
+    margin-left: 0%;
+    
+
+}
+
+
+.sub1{
+    font-size: 200%;
+    text-align: center;
+    margin-left: 40%;
+    color: white;
+    font-family: "Lobster", sans-serif;
+    margin-left: 0%;
+    margin-top: 1%;
+
+}
+
+/*Aquí comienza el formato de las otras html vinculadas
+
+/*Título genérico*/
+
+#tg{
+font-family: "Bebas Neue", sans-serif;
+color:white;
+font-size: 300%;
+}
+
+/*Texto de form*/
+#tf{
+font-family: "Lobster", sans-serif;
+color: white;
+
+}
