@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Great+Vibes&family=Lobster&displayswap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lana del Rey</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.jpg">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="home">
+
+
+
+
+<div>
+<nav id="nav" class="w-full p-2 shadow-lg fixed top-0 left-0 right-0 flex justify-between">
+    <div id="lana" class="px-14 py-0 text-xlg">Lana del Rey</div>
+    <div class="ml-auto flex items-center">
+        <div id="ham" class="lg:block sm:block ml=auto">
+        <div class="mt-2 w-10 h-2  bg-black"></div>
+        <div class="mt-2 w-10 h-2  bg-black"></div>
+        <div class="mt-2 w-10 h-2  bg-black"></div>
+    
+    </div>
+<div class="hidden md:block">
+    
+</div>
+</nav>
+<div id="bg" class="bg-black  opacity-65 fixed top-0 left-0 right-0 bottom-0"></div>
+    <div id="sidebar" class="duration-500  w-1/4 fixed top-0 bottom-0 right-0 bg-white shadow-lg transform">
+            <div class="p-3 hover:bg-pink-400">
+                <a href="addAlbum.html">Añadir álbum</a>
+            </div>
+            <div class="p-3 hover:bg-pink-400">
+                <a href="addSong.html">Añadir canción</a>
+            </div>
+            <div class="p-3 hover:bg-pink-400">
+                <a href="Tours.html">Ir al Tour</a>
+            </div>
+            <div class="p-3 hover:bg-pink-400">
+                <a href="login.html">Iniciar sesión</a>
+            </div>
+            <div class="p-3 hover:bg-pink-400">
+                <a href="signUp.html">Registrarse</a>
+    </div>
+
+</div>
+
+
+</div>
+
+
+<div>
+    <h1 class="títulos">Ultraviolence</h1>
+</div>
+
+<div class="flex flex-col md:flex-row items-center justify-center mt-20">
+
+    <div class="bg-white bg-opacity-90 p-8 rounded-lg shadow-lg w-full md:w-3/5 mx-2 flex flex-col md:flex-row">
+        <div class="w-full md:w-1/2 p-4">
+            <img src="lana.jpeg" alt="Ultraviolence" class="w-3/5 md:w-full mb-4 mx-auto" />
+            <h1 id="tf3" class="text-3xl font-bold text-center mb-4">Sobre el Álbum</h1>
+            <p class="text-lg text-center">“Ultraviolence” es el tercer álbum de estudio de la cantante y compositora estadounidense Lana Del Rey, lanzado el 13 de junio de 2014. Este álbum marca una evolución en el estilo musical de Lana, alejándose del pop barroco de su anterior trabajo para adentrarse en un sonido más oscuro y centrado en el rock, con influencias de desert rock, rock alternativo y dream pop. Producido en su mayoría por Dan Auerbach de The Black Keys, “Ultraviolence” sumerge a los oyentes en una atmósfera cinematográfica y melancólica. Las letras exploran temas de amor, desamor y decadencia, con una narrativa que refleja la lucha interna y la vulnerabilidad de Lana.</p>
+        </div>
+
+        <div class="w-full md:w-1/2 p-4">
+            <h1 id="tg2" class="text-3xl font-bold mb-4 text-center">Escúchalo Ahora</h1>
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/1ORxRsK3MrSLvh7VQTF01F?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+
+    </div>
+</div>
+
+<div class="flex flex-col items-center justify-center mt-20">
+    <div class="bg-white bg-opacity-90 p-8 rounded-lg shadow-lg w-full md:w-3/5 mx-2">
+        <h1 id="tf3" class="text-3xl font-bold text-center mb-4">Sobre Lana del Rey</h1>
+        <p class="text-lg text-center">Lana Del Rey, cuyo nombre real es Elizabeth Woolridge Grant, nació el 21 de junio de 1985 en Nueva York, Estados Unidos. Es una cantante, compositora, modelo, actriz y poetisa conocida por su estilo musical único que combina elementos de indie pop, rock psicodélico y dream pop. Desde su debut en 2010, Lana ha capturado la atención del mundo con su voz melancólica y letras introspectivas. Su música a menudo explora temas de romance trágico, glamour y melancolía, con referencias a la cultura pop de los años 50 y 60. Incluida en la lista de los 200 mejores cantantes de todos los tiempos por Rolling Stone en 2023 y nombrada la mejor compositora estadounidense del siglo XXI por la edición británica de la misma revista. En 2012, la revista Time la destacó como una de las 100 personas más influyentes del mundo.</p>
+    </div>
+
+    <div class="flex flex-col items-center justify-center mt-20">
+        <div class="bg-white bg-opacity-90 p-8 rounded-lg shadow-lg w-full md:w-3/5 mx-2">
+            <h1 id="tg2" class="text-3xl font-bold mb-4 text-center">Conoce más álbumes</h1>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <!-- Repite este bloque para cada imagen -->
+                <div class="relative">
+                    <img src="a1.jpg" alt="Álbum 1" class="w-full h-auto object-cover" />
+                    <span class="like-icon" onclick="toggleLike(this)">🖤</span>
+                </div>
+                <div class="relative">
+                    <img src="a2.jpg" alt="Álbum 2" class="w-full h-auto object-cover" />
+                    <span class="like-icon" onclick="toggleLike(this)">🖤</span>
+                </div>
+                <div class="relative">
+                    <img src="a3.jpg" alt="Álbum 3" class="w-full h-auto object-cover" />
+                    <span class="like-icon" onclick="toggleLike(this)">🖤</span>
+                </div>
+                <div class="relative">
+                    <img src="a4.jpg" alt="Álbum 4" class="w-full h-auto object-cover" />
+                    <span class="like-icon" onclick="toggleLike(this)">🖤</span>
+                </div>
+                <div class="relative">
+                    <img src="a5.webp" alt="Álbum 5" class="w-full h-auto object-cover" />
+                    <span class="like-icon" onclick="toggleLike(this)">🖤</span>
+                </div>
+                <div class="relative">
+                    <img src="a6.jpg" alt="Álbum 6" class="w-full h-auto object-cover" />
+                    <span class="like-icon" onclick="toggleLike(this)">🖤</span>
+                </div>
+                <div class="relative">
+                    <img src="a7.jpg" alt="Álbum 7" class="w-full h-auto object-cover" />
+                    <span class="like-icon" onclick="toggleLike(this)">🖤</span>
+                </div>
+                <div class="relative">
+                    <img src="a8.jpg" alt="Álbum 8" class="w-full h-auto object-cover" />
+                    <span class="like-icon" onclick="toggleLike(this)">🖤</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./script.js"></script>
+</body>
+</html>

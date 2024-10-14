@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar Canciones</title>
+  
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.jpg">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Great+Vibes&family=Lobster&displayswap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+
+  
+    <div class="flex items-center justify-center">
+        <div class="mt-20 bg-black bg-opacity-90 p-8 rounded-lg shadow-lg w-3/5 md:w-2/5">
+            <h1 id="tg" class="text-3xl text-center mb-4 text-white">Agregar canciones</h1>
+            <div id="tf" class="form-container">
+                <form>
+                    <div class="mb-4">
+                        <label for="titulo" class="block text-white mb-2">Título:</label>
+                        <input type="text" id="titulo" name="titulo" class="w-full p-2 rounded bg-gray-800 text-white" required>
+                    </div>
+    
+                    <div class="mb-4">
+                        <label for="duracion" class="block text-white mb-2">Duración:</label>
+                        <input type="text" id="duracion" name="duracion" placeholder="Ej. 3:45" class="w-full p-2 rounded bg-gray-800 text-white" required>
+                    </div>
+    
+                    <div class="mb-4">
+                        <label for="link" class="block text-white mb-2">Link a la canción en YouTube:</label>
+                        <input type="url" id="link" name="link" placeholder="Ingrese la URL" class="w-full p-2 rounded bg-gray-800 text-white" required>
+                    </div>
+    
+                    <div class="flex justify-between">
+                        <button type="submit" class="p-2 bg-pink-500 text-white rounded cursor-pointer">Agregar Canción</button>
+                        <button type="button" class="p-2 bg-gray-500 text-white rounded cursor-pointer" onclick="window.location.href='index.html'">Cancelar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

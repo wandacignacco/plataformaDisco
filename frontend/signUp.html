@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.jpg">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Great+Vibes&family=Lobster&displayswap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+    <div class="flex items-center justify-center">
+        <div class="mt-20 bg-black bg-opacity-90 p-8 rounded-lg shadow-lg w-3/5 md:w-2/5">
+            <h3 id="tg" class="text-3xl text-center mb-4">Registro</h3>
+            <form method="POST" action="register">
+                <label class="block text-white mb-2">Usuario:
+                    <input class="w-full p-2 rounded bg-gray-800 text-white" type="text" name="usuario" placeholder="Usuario" required>
+                </label>
+                <br>
+                <label class="block text-white mb-2">Contraseña:
+                    <input class="w-full p-2 rounded bg-gray-800 text-white" type="password" name="contraseña" placeholder="Contraseña" required>
+                </label>
+                <br>
+                <label class="block text-white mb-2">Correo electrónico:
+                    <input class="w-full p-2 rounded bg-gray-800 text-white" type="email" name="correo electrónico" placeholder="Correo electrónico" required>
+                </label>
+                <br>
+                <input class="mt-4 p-2 bg-pink-500 text-white rounded cursor-pointer" type="submit" value="Registrarse">
+            </form>
+        </div>
+    </div>
+
+
+
+</body>
+</html>
