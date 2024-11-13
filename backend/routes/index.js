@@ -1,31 +1,28 @@
-const express = require('express')
-const router = require('./routes')
-const mongoose = require('mongoose')
-const app = express()
-
+const express = require('express');
+const router = require('./routes');
+const mongoose = require('mongoose');
+const app = express();
 
 app.use(express.json());
-app.use('/', router)
+app.use('/', router);
 
-const url = 'mongodb+srv://wandacignacco:Diosteamo@proyectodisco.qs0l1.mongodb.net/?retryWrites=true&w=majority&appName=proyectoDisco'
+const url = 'mongodb+srv://wandacignacco:Diosteamo@proyectodisco.qs0l1.mongodb.net/?retryWrites=true&w=majority&appName=proyectoDisco';
 
-const connectToMongo = async ()=>{
-
-    try{
-
-        await mongoose.connect(url)
+const connectToMongo = async () => {
+  try {
+    await mongoose.connect(url);
     
-    app.listen(3000), () => {
-    console.log("Servidor escuchando en puerto 3000 y DB conectada"
+    // Mueve el app.listen dentro del bloque try para asegurar que solo se ejecute si la conexión a MongoDB fue exitosa
+    app.listen(3000, () => {
+      console.log("Servidor escuchando en puerto 3000 y DB conectada");
+    });
+  } catch (error) {
+    console.log("Error al conectar con MongoDB:", error);
+  }
+};
 
-    )};
-
-      
-      }catch(error){
-        console.log(error)
-      }
-    }
-
+// Llamar la función para conectar con la base de datos
+connectToMongo();
 
 
 
