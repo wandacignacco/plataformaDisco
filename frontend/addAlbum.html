@@ -14,28 +14,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="addAlbum.js" defer></script>
+  
 </head>
 <body>
   <div class="flex items-center justify-center">
     <div class="mt-20 bg-black bg-opacity-90 p-8 rounded-lg shadow-lg w-3/5 md:w-2/5">
         <h1 id="tg" class="text-3xl text-center mb-4 text-white">Nuevo Álbum</h1>
         <div id="tf">
-            <form method="POST" action="AgregarAlbum">
+            <form id="addAlbumForm" method="POST" action="AgregarAlbum">
                 <div class="mb-4">
                     <label class="block text-white mb-2">Título:
-                        <input type="text" name="album" placeholder="Álbum" class="w-full p-2 rounded bg-gray-800 text-white" required>
+                        <input type="text" id="album" name="album" placeholder="Álbum" class="w-full p-2 rounded bg-gray-800 text-white" required>
                     </label>
                 </div>
 
                 <div class="mb-4">
                     <label class="block text-white mb-2">Año de Lanzamiento:
-                        <input type="number" name="Año" placeholder="Año" class="w-full p-2 rounded bg-gray-800 text-white" required>
+                        <input type="number" id="anio" name="Año" placeholder="Año" class="w-full p-2 rounded bg-gray-800 text-white" required>
                     </label>
                 </div>
 
                 <div class="mb-4">
-                    <label for="Descripción" class="block text-white mb-2">Descripción:</label>
-                    <textarea id="Descripción" rows="5" class="w-full p-2 rounded bg-gray-800 text-white" placeholder="Añade una descripción" required></textarea>
+                    <label for="descripcion" class="block text-white mb-2">Descripción:</label>
+                    <textarea id="descripcion" rows="5" class="w-full p-2 rounded bg-gray-800 text-white" placeholder="Añade una descripción" required></textarea>
                 </div>
 
                 <div class="mb-4">
@@ -50,6 +53,5 @@
         </div>
     </div>
 </div>
- 
 </body>
 </html>
