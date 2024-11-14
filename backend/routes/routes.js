@@ -2,7 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const albums = require('../models/albums');
 const User = require('../models/user');
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcryptjs');
 const router = express.Router();
 
 // Función para hashear la contraseña
