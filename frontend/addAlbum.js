@@ -1,3 +1,4 @@
+// Evento para validar y enviar el formulario sin recargar la página
 async function validateAddAlbumForm(event) {
     event.preventDefault(); // Evita el envío del formulario hasta que se validen los campos
 
@@ -35,6 +36,7 @@ async function validateAddAlbumForm(event) {
         errorMessage += "Ingrese una URL válida de imagen (jpg, jpeg, png, gif).\n";
     }
 
+    // Si la validación es exitosa, enviar los datos al backend
     if (isValid) {
         await Swal.fire({
             icon: 'success',
@@ -42,9 +44,50 @@ async function validateAddAlbumForm(event) {
             text: 'Todos los datos son correctos. Se procederá a enviar el formulario.',
             confirmButtonText: 'Aceptar'
         });
-        // Enviar el formulario si la validación es exitosa
-        event.target.submit();
+
+        // Crear un objeto con los datos del formulario
+        const albumData = {
+            album: albumTitle,
+            Año: albumYear,
+            descripcion: albumDescription,
+            imagen: albumImageUrl
+        };
+
+        // Enviar los datos al backend usando fetch
+        try {
+            const response = await fetch('/albums', {
+                method: 'POST', // Usamos el método POST
+                headers: {
+                    'Content-Type': 'application/json', // Enviamos datos en formato JSON
+                },
+                body: JSON.stringify(albumData), // Convertimos el objeto a JSON
+            });
+
+            if (!response.ok) {
+                throw new Error('Hubo un problema al agregar el álbum');
+            }
+
+            // Mostrar una alerta de éxito si el álbum se guarda correctamente
+            await Swal.fire({
+                icon: 'success',
+                title: 'Álbum Agregado',
+                text: 'El álbum ha sido agregado correctamente.',
+                confirmButtonText: 'Aceptar'
+            });
+
+            // Limpiar el formulario
+            document.getElementById('addAlbumForm').reset();
+        } catch (error) {
+            // Mostrar un mensaje de error si algo falla
+            await Swal.fire({
+                icon: 'error',
+                title: 'Error al agregar el álbum',
+                text: error.message,
+                confirmButtonText: 'Aceptar'
+            });
+        }
     } else {
+        // Si la validación falla, mostrar un mensaje de error
         await Swal.fire({
             icon: 'error',
             title: 'Error en la validación',

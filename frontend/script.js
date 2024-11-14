@@ -24,3 +24,21 @@ function toggleLike(element) {
         element.classList.remove('liked');
     }
 }
+
+    async function getUser(){
+        try{
+                const response = await axios.get("http://localhost:3000/user/6735289f3c1f73bf2f4beca2")
+                console.log(response);
+        }catch(error){
+            console.log(error)
+        }
+    }
+
+    async function getAlbum(){
+        try{
+                const response = await axios.get("http://localhost:3000/album/6734f7034fa2fb50145df2f0")
+                console.log(response);
+        }catch(error){
+            console.log(error)
+        }
+    }
